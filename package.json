@@ -1,0 +1,24 @@
+{
+  "name": "bank-login-automation",
+  "version": "0.1.0",
+  "description": "An app that helps you to automate your bank account login easily (ONLY FOR macOS & iOS USERS)",
+  "author": "Mohammad ALTAWEEL (@mtawil7)",
+  "license": "MIT",
+  "homepage": "https://github.com/mtawil/bank-login-automation",
+  "main": "app.js",
+  "bugs": {
+    "url": "https://github.com/mtawil/bank-login-automation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mtawil/bank-login-automation.git"
+  },
+  "dependencies": {
+    "better-sqlite3": "^6.0.1",
+    "express": "^4.17.1",
+    "moment-range": "^4.0.2"
+  },
+  "scripts": {
+    "test": "standard"
+  }
+}
