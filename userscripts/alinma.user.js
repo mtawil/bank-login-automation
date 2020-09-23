@@ -25,29 +25,20 @@
     }
 
     var step1 = document.querySelector('#loginForm\\:userIdInput')
-    var step2 = document.querySelector('#loginForm\\:loginBttn')
-    var step3 = document.querySelector('#loginForm\\:userPasswordInput')
-    var step4 = document.querySelector('#mobileTokenform\\:textInput')
+    var step2 = document.querySelector('#mobileTokenform\\:otpInput')
 
     if (step1) {
         step1.type = 'password'
         step1.value = username
+        document.querySelector('#loginForm\\:userPasswordInput').value = password
         document.querySelector('#loginForm\\:loginBttn_submit').click()
 
-    } else if (step2 && !step3) {
-        step2.click()
-
-    } else if (step3) {
-        step3.value = password
-        document.querySelector('#loginForm\\:authenticationOptions_radioGroup\\:0').click()
-        step2.click()
-
-    } else if (step4) {
+    } else if (step2) {
         fetch('http://127.1:3000/token?handle_id='+handleId)
             .then((response) => response.text())
             .then((token) => {
                 if (/^\d+$/.test(token)) {
-                    step4.value = token
+                    step2.value = token
                     document.querySelector('#mobileTokenform\\:inputSubmit_submit').click()
                 }
             })
