@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Alinma Login Automation
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0
+// @version      0.1.1
 // @author       Mohammad ALTAWEEL (@mtawil7)
 // @match        https://online.alinma.com/ibweb/public/login.jsf*
 // ==/UserScript==
