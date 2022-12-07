@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "better-sqlite3": "^7.1.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "moment-range": "^4.0.2"
   },
   "scripts": {
