@@ -14,7 +14,7 @@
     "url": "git://github.com/mtawil/bank-login-automation.git"
   },
   "dependencies": {
-    "better-sqlite3": "^7.1.1",
+    "better-sqlite3": "^7.6.2",
     "express": "^4.18.2",
     "moment-range": "^4.0.2"
   },
